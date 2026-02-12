@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { BadgeCheck } from "lucide-react";
 import ebookMockup from "@/assets/ebook-mockup.png";
 
 const HeroSection = () => {
@@ -8,7 +9,8 @@ const HeroSection = () => {
       <div className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32">
         <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
           <div className="flex-1 text-center md:text-left space-y-6">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-accent/20 text-accent text-sm font-semibold tracking-wide uppercase">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/20 text-accent text-sm font-semibold tracking-wide uppercase">
+              <BadgeCheck className="w-5 h-5" />
               Método Comprovado
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight">
@@ -25,16 +27,19 @@ const HeroSection = () => {
               >
                 Comprar e-book agora
               </Button>
-              <p className="text-sm text-primary-foreground/60 self-center">
-                De <span className="line-through">R$ 197</span>{" "}
-                <span className="text-accent font-bold text-xl">R$ 47,00</span>
-              </p>
+              <div className="text-sm text-primary-foreground/60 self-center space-y-1 text-center">
+                <p>
+                  De <span className="line-through">€78,00</span>{" "}
+                  <span className="text-accent font-bold text-xl">€39,99</span>
+                </p>
+                <p className="text-accent font-semibold text-xs">🔥 Promoção: 50% de desconto!</p>
+              </div>
             </div>
           </div>
           <div className="flex-shrink-0 w-64 md:w-80 lg:w-96">
             <img
               src={ebookMockup}
-              alt="E-book Saúde Masculina - Guia completo para superar a impotência"
+              alt="E-book O Segredo para Dominar uma Mulher"
               className="w-full drop-shadow-2xl hover:scale-105 transition-transform duration-500"
             />
           </div>
