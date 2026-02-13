@@ -14,13 +14,174 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      admin_profiles: {
+        Row: {
+          created_at: string
+          id: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      button_clicks: {
+        Row: {
+          button_name: string
+          created_at: string
+          id: string
+          page_url: string | null
+          session_id: string
+        }
+        Insert: {
+          button_name: string
+          created_at?: string
+          id?: string
+          page_url?: string | null
+          session_id: string
+        }
+        Update: {
+          button_name?: string
+          created_at?: string
+          id?: string
+          page_url?: string | null
+          session_id?: string
+        }
+        Relationships: []
+      }
+      comments: {
+        Row: {
+          comment: string
+          created_at: string
+          id: string
+          name: string
+          status: string
+        }
+        Insert: {
+          comment: string
+          created_at?: string
+          id?: string
+          name: string
+          status?: string
+        }
+        Update: {
+          comment?: string
+          created_at?: string
+          id?: string
+          name?: string
+          status?: string
+        }
+        Relationships: []
+      }
+      contact_requests: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          status?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          status?: string
+        }
+        Relationships: []
+      }
+      page_visits: {
+        Row: {
+          city: string | null
+          country: string | null
+          created_at: string
+          duration_seconds: number | null
+          id: string
+          page_url: string
+          referrer: string | null
+          session_id: string
+          user_agent: string | null
+        }
+        Insert: {
+          city?: string | null
+          country?: string | null
+          created_at?: string
+          duration_seconds?: number | null
+          id?: string
+          page_url: string
+          referrer?: string | null
+          session_id: string
+          user_agent?: string | null
+        }
+        Update: {
+          city?: string | null
+          country?: string | null
+          created_at?: string
+          duration_seconds?: number | null
+          id?: string
+          page_url?: string
+          referrer?: string | null
+          session_id?: string
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
+      purchases: {
+        Row: {
+          amount_cents: number | null
+          created_at: string
+          currency: string | null
+          email: string
+          id: string
+          lemon_squeezy_order_id: string | null
+          name: string | null
+          product_name: string | null
+          status: string
+        }
+        Insert: {
+          amount_cents?: number | null
+          created_at?: string
+          currency?: string | null
+          email: string
+          id?: string
+          lemon_squeezy_order_id?: string | null
+          name?: string | null
+          product_name?: string | null
+          status?: string
+        }
+        Update: {
+          amount_cents?: number | null
+          created_at?: string
+          currency?: string | null
+          email?: string
+          id?: string
+          lemon_squeezy_order_id?: string | null
+          name?: string | null
+          product_name?: string | null
+          status?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      is_admin: { Args: { _user_id: string }; Returns: boolean }
     }
     Enums: {
       [_ in never]: never
