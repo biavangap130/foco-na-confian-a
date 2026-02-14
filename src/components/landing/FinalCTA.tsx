@@ -18,7 +18,7 @@ const FinalCTA = () => {
         <Button
           size="lg"
           className="bg-accent hover:bg-accent/90 text-accent-foreground text-xl font-bold px-12 py-8 rounded-xl shadow-lg shadow-accent/30 transition-all hover:scale-105 hover:shadow-xl hover:shadow-accent/40"
-          onClick={() => window.open("#", "_blank")}
+          onClick={() => window.open("https://segredomasculino.lemonsqueezy.com/checkout/buy/4f42b314-3875-4739-a88c-c1c0dc02fc90", "_blank")}
         >
           Comprar e-book agora
         </Button>
