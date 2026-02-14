@@ -44,7 +44,7 @@ const ContentSection = () => {
             <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-bold px-10 py-7 rounded-xl shadow-lg shadow-accent/30 transition-all hover:scale-105"
-              onClick={() => { trackClick("comprar_ebook_conteudo"); window.open("https://segredomasculino.lemonsqueezy.com/checkout/buy/4f42b314-3875-4739-a88c-c1c0dc02fc90", "_blank"); }}
+              onClick={() => { trackClick("comprar_ebook_conteudo"); window.location.href = "https://segredomasculino.lemonsqueezy.com/checkout/buy/4f42b314-3875-4739-a88c-c1c0dc02fc90"; }}
             >
               Comprar e-book agora
             </Button>
