@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { BadgeCheck } from "lucide-react";
+import { BadgeCheck, Users, Mail } from "lucide-react";
 import ebookMockup from "@/assets/ebook-mockup.png";
 import { supabase } from "@/integrations/supabase/client";
 import { trackClick } from "@/lib/trackClick";
+import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
   return (
@@ -21,6 +22,10 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-xl leading-relaxed">
               Descubra orientações práticas e naturais que já ajudaram milhares de homens a superarem a impotência sexual e reconquistarem uma vida plena.
             </p>
+            <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
+              <Users className="w-4 h-4 text-accent" />
+              <span>Mais de <strong className="text-accent">2.000 homens</strong> já transformaram suas vidas</span>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
               <Button
                 size="lg"
@@ -36,6 +41,11 @@ const HeroSection = () => {
                 </p>
                 <p className="text-accent font-semibold text-xs">🔥 Promoção: 50% de desconto!</p>
               </div>
+            </div>
+            <CountdownTimer />
+            <div className="flex items-center gap-2 text-xs text-primary-foreground/50">
+              <Mail className="w-3.5 h-3.5" />
+              <span>Receba o e-book no seu email imediatamente após o pagamento</span>
             </div>
           </div>
           <div className="flex-shrink-0 w-64 md:w-80 lg:w-96">
