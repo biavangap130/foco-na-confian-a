@@ -29,10 +29,10 @@ const ProblemsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Você Não Está Sozinho Nessa Luta
+            Não Está Sozinho Nesta Luta
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Milhões de homens enfrentam esse desafio silenciosamente. Entenda as causas e descubra como superá-las.
+            Milhares de homens portugueses enfrentam este desafio em silêncio. Entenda as causas e descubra como superá-las.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

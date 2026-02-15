@@ -12,15 +12,20 @@ const HeroSection = () => {
       <div className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32">
         <div className="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
           <div className="flex-1 text-center md:text-left space-y-6">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/20 text-accent text-sm font-semibold tracking-wide uppercase">
-              <BadgeCheck className="w-5 h-5" />
-              Método Comprovado
-            </span>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/20 text-accent text-sm font-semibold tracking-wide uppercase">
+                <BadgeCheck className="w-5 h-5" />
+                Método Comprovado
+              </span>
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-foreground/10 text-primary-foreground/80 text-sm font-semibold">
+                🇵🇹 Feito para homens portugueses
+              </span>
+            </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight">
               Recupere Sua <span className="text-accent">Confiança</span> e Vitalidade Masculina
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-xl leading-relaxed">
-              Descubra orientações práticas e naturais que já ajudaram milhares de homens a superarem a impotência sexual e reconquistarem uma vida plena.
+              Descubra orientações práticas e naturais que já ajudaram milhares de homens portugueses a superarem a impotência sexual e reconquistarem uma vida plena.
             </p>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
               <Users className="w-4 h-4 text-accent" />

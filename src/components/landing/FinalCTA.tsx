@@ -11,7 +11,7 @@ const FinalCTA = () => {
           Não Espere Mais Para Mudar Sua Vida
         </h2>
         <p className="text-primary-foreground/70 text-lg mb-2 max-w-xl mx-auto">
-          Aproveite o preço promocional por tempo limitado e comece sua transformação hoje.
+          Aproveite o preço promocional por tempo limitado e comece a sua transformação hoje.
         </p>
         <p className="text-primary-foreground/50 mb-2">
           De <span className="line-through">€78,00</span>{" "}

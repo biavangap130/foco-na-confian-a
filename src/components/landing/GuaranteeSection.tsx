@@ -12,7 +12,7 @@ const GuaranteeSection = () => {
             Garantia Incondicional de 7 Dias
           </h2>
           <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-            Se por qualquer motivo você não ficar satisfeito com o conteúdo do e-book, devolvemos 100% do seu dinheiro em até 7 dias. Sem perguntas, sem burocracia.
+            Se por qualquer motivo não ficar satisfeito com o conteúdo do e-book, devolvemos 100% do seu dinheiro em até 7 dias. Sem perguntas, sem burocracia.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <div className="flex items-center gap-3">

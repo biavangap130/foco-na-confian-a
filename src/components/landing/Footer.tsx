@@ -24,14 +24,14 @@ const Footer = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
                 type="email"
-                placeholder="Seu e-mail"
+                placeholder="O seu e-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40"
               />
               <Textarea
-                placeholder="Sua mensagem"
+                placeholder="A sua mensagem"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
