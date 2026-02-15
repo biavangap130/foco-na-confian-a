@@ -7,18 +7,18 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
 const testimonials = [
-  { name: "Carlos M.", age: 45, initials: "CM", text: "Uau, o e-book é incrível! Em poucas semanas já senti uma diferença enorme na minha confiança e disposição." },
-  { name: "Roberto S.", age: 52, initials: "RS", text: "Depois de anos sofrendo em silêncio, finalmente encontrei orientações que realmente funcionam. Recomendo demais!" },
-  { name: "André L.", age: 38, initials: "AL", text: "O conteúdo é muito bem explicado e prático. Mudei minha alimentação e os resultados apareceram rápido." },
-  { name: "Fernando P.", age: 49, initials: "FP", text: "Minha esposa percebeu a mudança antes de mim! O e-book transformou nossa relação de verdade." },
-  { name: "Marcos V.", age: 55, initials: "MV", text: "Eu tinha vergonha de procurar ajuda, mas esse e-book me deu tudo que eu precisava de forma discreta." },
-  { name: "João R.", age: 41, initials: "JR", text: "As técnicas de controle emocional foram um divisor de águas. Me sinto 10 anos mais jovem!" },
-  { name: "Paulo H.", age: 47, initials: "PH", text: "Investimento que valeu cada centavo. O plano de 30 dias é simplesmente fantástico." },
-  { name: "Ricardo F.", age: 60, initials: "RF", text: "Mesmo na minha idade, consegui resultados surpreendentes. O e-book é completo e acessível." },
-  { name: "Thiago B.", age: 36, initials: "TB", text: "A ansiedade estava acabando comigo. Com as dicas do e-book, recuperei minha autoestima." },
-  { name: "Gustavo N.", age: 43, initials: "GN", text: "Nunca imaginei que mudanças tão simples poderiam ter tanto impacto. Material de altíssima qualidade!" },
-  { name: "Eduardo C.", age: 50, initials: "EC", text: "Já tentei de tudo. Esse foi o único método que me trouxe resultados reais e duradouros." },
-  { name: "Leandro A.", age: 44, initials: "LA", text: "Comprei desconfiado e me surpreendi! O conteúdo é sério, bem embasado e muito prático." },
+  { name: "Carlos M.", age: 45, city: "Lisboa", initials: "CM", text: "O e-book é incrível! Em poucas semanas já senti uma diferença enorme na minha confiança e disposição." },
+  { name: "Roberto S.", age: 52, city: "Porto", initials: "RS", text: "Depois de anos a sofrer em silêncio, finalmente encontrei orientações que realmente funcionam. Recomendo!" },
+  { name: "André L.", age: 38, city: "Braga", initials: "AL", text: "O conteúdo é muito bem explicado e prático. Mudei a minha alimentação e os resultados apareceram rápido." },
+  { name: "Fernando P.", age: 49, city: "Coimbra", initials: "FP", text: "A minha esposa notou a mudança antes de mim! O e-book transformou a nossa relação de verdade." },
+  { name: "Marcos V.", age: 55, city: "Faro", initials: "MV", text: "Eu tinha vergonha de procurar ajuda, mas este e-book deu-me tudo o que eu precisava de forma discreta." },
+  { name: "João R.", age: 41, city: "Aveiro", initials: "JR", text: "As técnicas de controlo emocional foram um ponto de viragem. Sinto-me 10 anos mais jovem!" },
+  { name: "Paulo H.", age: 47, city: "Setúbal", initials: "PH", text: "Investimento que valeu cada cêntimo. O plano de 30 dias é simplesmente fantástico." },
+  { name: "Ricardo F.", age: 60, city: "Viseu", initials: "RF", text: "Mesmo na minha idade, consegui resultados surpreendentes. O e-book é completo e acessível." },
+  { name: "Tiago B.", age: 36, city: "Leiria", initials: "TB", text: "A ansiedade estava a acabar comigo. Com as dicas do e-book, recuperei a minha autoestima." },
+  { name: "Gustavo N.", age: 43, city: "Funchal", initials: "GN", text: "Nunca imaginei que mudanças tão simples pudessem ter tanto impacto. Material de altíssima qualidade!" },
+  { name: "Eduardo C.", age: 50, city: "Évora", initials: "EC", text: "Já tentei de tudo. Este foi o único método que me trouxe resultados reais e duradouros." },
+  { name: "Leandro A.", age: 44, city: "Guimarães", initials: "LA", text: "Comprei desconfiado e surpreendi-me! O conteúdo é sério, bem fundamentado e muito prático." },
 ];
 
 const avatarColors = [
@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
             O Que Nossos Leitores Dizem
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Histórias reais de transformação e superação.
+            Histórias reais de homens portugueses que transformaram as suas vidas.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
                   </Avatar>
                   <div>
                     <p className="font-bold text-foreground text-sm font-sans">{t.name}</p>
-                    <p className="text-muted-foreground text-xs">{t.age} anos</p>
+                    <p className="text-muted-foreground text-xs">{t.age} anos · {t.city}</p>
                   </div>
                 </div>
                 <div className="flex gap-0.5">
@@ -88,7 +88,7 @@ const TestimonialsSection = () => {
             <p className="text-muted-foreground text-sm mb-5">Partilhe a sua experiência com o e-book.</p>
             <form onSubmit={handleCommentSubmit} className="space-y-4">
               <Input
-                placeholder="Seu nome"
+                placeholder="O seu nome"
                 value={commentName}
                 onChange={(e) => setCommentName(e.target.value)}
                 required

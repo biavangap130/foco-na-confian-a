@@ -20,10 +20,10 @@ const ContentSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            O Que Você Vai Aprender
+            O Que Vai Aprender
           </h2>
           <p className="text-primary-foreground/70 text-lg">
-            Um guia completo e direto ao ponto com tudo que você precisa saber.
+            Um guia completo e direto ao ponto com tudo o que precisa de saber.
           </p>
         </div>
         <div className="max-w-2xl mx-auto">

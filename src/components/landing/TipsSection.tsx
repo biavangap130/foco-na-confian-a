@@ -33,10 +33,10 @@ const TipsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Dicas Práticas Para Sua Saúde
+            Dicas Práticas Para a Sua Saúde
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Pequenas mudanças de hábito que geram grandes resultados na sua vitalidade.
+            Pequenas mudanças de hábitos que geram grandes resultados na sua vitalidade.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
