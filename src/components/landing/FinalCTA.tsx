@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import { trackClick } from "@/lib/trackClick";
+import CountdownTimer from "./CountdownTimer";
 
 const FinalCTA = () => {
   return (
@@ -16,7 +17,10 @@ const FinalCTA = () => {
           De <span className="line-through">€78,00</span>{" "}
           <span className="text-accent font-bold text-3xl">€39,99</span>
         </p>
-        <p className="text-accent font-semibold text-sm mb-8">🔥 Promoção: 50% de desconto!</p>
+        <p className="text-accent font-semibold text-sm mb-4">🔥 Promoção: 50% de desconto!</p>
+        <div className="mb-6">
+          <CountdownTimer />
+        </div>
         <Button
           size="lg"
           className="bg-accent hover:bg-accent/90 text-accent-foreground text-xl font-bold px-12 py-8 rounded-xl shadow-lg shadow-accent/30 transition-all hover:scale-105 hover:shadow-xl hover:shadow-accent/40"
@@ -24,8 +28,8 @@ const FinalCTA = () => {
         >
           Comprar e-book agora
         </Button>
-        <p className="mt-4 text-primary-foreground/40 text-sm">
-          Acesso imediato após a confirmação do pagamento
+        <p className="mt-4 text-primary-foreground/50 text-sm">
+          📧 Receba o e-book no seu email imediatamente após o pagamento
         </p>
       </div>
     </section>
