@@ -7,8 +7,8 @@ const getTargetDate = () => {
     const date = new Date(stored);
     if (date.getTime() > Date.now()) return date;
   }
-  // Set 48h from now
-  const target = new Date(Date.now() + 48 * 60 * 60 * 1000);
+  // Set 2h37m from now
+  const target = new Date(Date.now() + (2 * 60 + 37) * 60 * 1000);
   localStorage.setItem(key, target.toISOString());
   return target;
 };
