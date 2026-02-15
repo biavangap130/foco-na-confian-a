@@ -24,7 +24,7 @@ const HeroSection = () => {
             </p>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
               <Users className="w-4 h-4 text-accent" />
-              <span>Mais de <strong className="text-accent">2.000 homens</strong> já transformaram suas vidas</span>
+              <span>Mais de <strong className="text-accent">2.700 homens</strong> já transformaram suas vidas</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
               <Button
