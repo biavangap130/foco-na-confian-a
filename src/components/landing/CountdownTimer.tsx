@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const getTargetDate = () => {
-  const key = "promo_countdown_target";
+  const key = "promo_countdown_target_v2";
   const stored = localStorage.getItem(key);
   if (stored) {
     const date = new Date(stored);
