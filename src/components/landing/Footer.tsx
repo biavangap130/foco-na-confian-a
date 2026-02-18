@@ -51,7 +51,7 @@ const Footer = () => {
               <h3 className="text-xl font-bold mb-4 font-sans">Links Úteis</h3>
               <ul className="space-y-2 text-primary-foreground/60 text-sm">
                 <li><a href="https://www.termsfeed.com/live/02b61969-89f5-43de-9ae2-161470772ccf">Política de Privacidade</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Termos de Uso</a></li>
+                <li><a href="https://www.termsfeed.com/live/66764340-95ea-429d-be15-40fa1cc561b1" className="hover:text-accent transition-colors">Termos de Uso</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Perguntas Frequentes</a></li>
               </ul>
             </div>
