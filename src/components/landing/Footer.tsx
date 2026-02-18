@@ -50,7 +50,7 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-4 font-sans">Links Úteis</h3>
               <ul className="space-y-2 text-primary-foreground/60 text-sm">
-                <li><a href="Politica_de_privacidade.html" className="hover:text-accent transition-colors">Política de Privacidade</a></li>
+                <li><a href="https://www.termsfeed.com/live/02b61969-89f5-43de-9ae2-161470772ccf" className="hover:text-accent transition-colors">Política de Privacidade</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Termos de Uso</a></li>
                 <li><a href="#" className="hover:text-accent transition-colors">Perguntas Frequentes</a></li>
               </ul>
