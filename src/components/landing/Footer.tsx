@@ -53,7 +53,6 @@ const Footer = () => {
                 <li><a href="https://www.termsfeed.com/live/02b61969-89f5-43de-9ae2-161470772ccf">Política de Privacidade</a></li>
                 <li><a href="https://www.termsfeed.com/live/66764340-95ea-429d-be15-40fa1cc561b1" className="hover:text-accent transition-colors">Termos de Uso</a></li>
                 <li><a href="https://www.termsfeed.com/live/13745662-ddd7-4938-9f7a-fec57ffdd73b" className="hover:text-accent transition-colors">Return & Refund Policy</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Perguntas Frequentes</a></li>
               </ul>
             </div>
             <p className="text-primary-foreground/40 text-xs mt-8">
